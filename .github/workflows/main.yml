@@ -1,0 +1,12 @@
+name: Basic Echo Test
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  echo-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "빌드 성공! 가연아 잘 하고 있어 :)"
